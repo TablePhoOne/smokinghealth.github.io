@@ -1,0 +1,336 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #171945;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for all sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive Layout for Services Section */
+#services {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 20px 0;
+}
+
+/* Service Boxes */
+.service {
+    background: #353283;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.service img {
+    max-width: 10%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Responsive typography */
+h1, h2, h3 {
+    font-size: calc(1.5rem + 1vw);
+}
+
+/* Testimonial Section */
+#testimonials {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px 0;
+}
+
+.testimonial {
+    background: #353283;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Responsive footer */
+footer {
+    background-color: #241141;
+    padding: 20px;
+    text-align: center;
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+/* Media Queries for Further Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    .service,
+    .testimonial {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .service,
+    .testimonial {
+        padding: 10px;
+    }
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Dark Theme Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: 	#1e2b58;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #253569;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+.section h2 {
+    font-size: 1.75rem;
+    color: #f0f0f0;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    margin-bottom: 1rem;
+    color: #d0d0d0;
+}
+
+/* Glowing Image Effect */
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+/* Glow effect on hover */
+.image-placeholder:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.6);
+}
+/* Image Container Styling */
+.image-container img {
+    max-width: 50%;
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Enlarge image on hover */
+.image-container img:hover {
+    transform: scale(1.1); /* Enlarge slightly on hover */
+}
+
+/* Responsive adjustments */
+@media (min-width: 1200px) {
+    .image-container img {
+        max-width: 80%; /* Larger images on big screens */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .image-container img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .image-container img {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Two-Column Layout */
+.content-two-columns {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Footer Slime Effect */
+footer {
+    position: relative;
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer p {
+    font-size: 0.9rem;
+    z-index: 2;
+    position: relative;
+}
+
+/* Create slime drips */
+footer::before, footer::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #333);
+    border-radius: 50%;
+    animation: drip 3s infinite ease-in-out;
+}
+
+/* Different slime drip sizes */
+footer::after {
+    height: 120px;
+    width: 80%;
+    left: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Keyframes for the dripping animation */
+@keyframes drip {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .content-two-columns {
+        flex-direction: column;
+    }
+}
+
+/* Splash Screen Styles */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.splash-content h1 {
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 2;
+    animation: fadeText 1.5s ease forwards;
+}
+
+/* Particle Effect */
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: disperse 5s ease forwards; /* Updated to 5 seconds */
+}
+
+/* Updated Disperse Animation with "Bouncing" Effect */
+@keyframes disperse {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(calc(var(--x) / 2), calc(var(--y) / 2)) scale(1.2);
+    }
+    50% {
+        transform: translate(var(--x), var(--y)) scale(1);
+    }
+    75% {
+        transform: translate(calc(var(--x) * 1.5), calc(var(--y) * 1.5)) scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(calc(var(--x) * 2), calc(var(--y) * 2)) scale(0.5);
+    }
+}
+
+
+/* Text Fade Animation */
+@keyframes fadeText {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* Final Fade-Out for Splash Screen */
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+}

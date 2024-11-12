@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoking Health</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <div class="splash-content">
+            <h1>Click to exhale</h1>
+        </div>
+    </div>
+
+        <!-- Header Section -->
+        <header>
+            <div class="container">
+                <h1>The Dangers of Smoking</h1>
+                <p>By An Ton Truong</p>
+            </div>
+        </header>
+
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2>What is Smoking</h2>
+            <p>Smoking, at its core, is inhaling smoke from burning plant material, nicotine affects the brain, creating a relaxing and pleasurable sensation, which can make quitting seem almost impossible. In addition to this, smoking also tobacco increases the risk of cancer, stroke, heart attack, lung disease, and many other health problems.</p>
+            <div class="image-placeholder"><img src="https://i0.wp.com/rooseveltislanddaily.news/wp-content/uploads/2021/07/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjgwLTE4MS1wLWwxZGJ1ZndiLnBuZw.png?fit=1300%2C867&ssl=1" alt="smoke">
+            </div></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2>Some not so fun facts about vaping</h2>
+            <div class="content-two-columns">
+                <div class="column">
+                    <h3>Vaping worse than smoking?</h3>
+                    <p>according to a study done by truth initiative, JUUL, a well known vape product can actually contain as much nicotine as 20 cigarettes in 1 JUUL pod.</p>
+                    <div class="image-placeholder"><img src="juul-pod-goldentobacco-UK-front_700x700 (2).webp"></div>
+                </div>
+                <div class="column">
+                    <h3>What are you inhaling?</h3>
+                    <p>Vapes can actually contain the same of the same chemicals found in cigarette smoke, such as, chromium, formaldehyde, lead, and nickel.<br><br><br></p>
+                    <div class="image-placeholder"><img src="vaping-2 (1).jpg"></div>
+                </div>
+                <div class="column">
+                    <h3>Like having working heart? Quit Vape.</h3>
+                    <p>Vaping is shown to raise your blood pressure and spikes your adrenaline, which increases your heart rate and the likelihood of having a heart attack in the future.</p>
+                    <div class="image-placeholder"><img src="https://atlas-content-cdn.pixelsquid.com/assets_v2/332/3325815630434670455/previews/G03-200x200.jpg"></div>
+                </div>
+                <div class="column">
+                    <h3>Vapes safe for lungs? think again</h3>
+                    <p>“People need to understand that e-cigarettes are potentially dangerous to your health,” says researcher Blaha. “Emerging data suggests links to chronic lung disease and asthma, as well as associations between dual use of e-cigarettes and smoking with cardiovascular disease. You’re exposing yourself to all kinds of chemicals that we don’t yet understand and that are probably not safe.”</p>
+                    <div class="image-placeholder"><img src="https://static.vecteezy.com/system/resources/thumbnails/044/812/116/small/detailed-human-lungs-organ-isolated-on-a-transparent-background-png.png"></div>
+                </div>
+                <div class="column">
+                    <h3>I can quit whenever I want</h3>
+                    <p>studies show both e-cigarettes and regular cigarettes contain nicotine, which research suggests may be as addictive as heroin and cocaine.</p>
+                    <div class="image-placeholder"><img src="https://static.vecteezy.com/system/resources/thumbnails/021/909/525/small/quit-smoking-stop-smoking-smoking-side-effects-concept-of-no-smoking-and-world-no-tobacco-day-vector.jpg"></div>
+                </div>
+                <div class="column">
+                    <h3>It could end in death</h3>
+                    <p>In 2020, 68 people died from e-cigarette, or vaping, product use-associated lung injury (EVALI) out of more than 2,800 hospitalizations                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <h2>It affects YOU</h2>
+            <div class="testimonial">
+                <h1>Targeted towards teens</h1>
+                <p>Vaping is known to be targeted towards the younger audience, having colorful, attractive designed, and being marketed as fun or the "new thing"</p>
+            </div>
+            <div class="testimonial">
+                <h1>The people you hang with can affect YOU</h1>
+                <p>"Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed."Secondhand smoke exposure occurs when people breathe in smoke breathed out by people who smoke or from burning tobacco products. There is no safe level of exposure to secondhand smoke. Even brief exposure can cause serious health problems and be deadly.
+            <div class="testimonial">
+                <h1>Vaping kills the teen brain</h1>
+                <p>Nicotine can impact brain development in teens, affecting memory, attention, learning, and impulse control. Nicotine also can increase the risk of mood disorders and worsen anxiety and depression.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2>Contact Help</h2>
+            <p>call 1-800-QUIT-NOW (or 1-800-784-8669) to help quit vape</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 An Ton Truong All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<script>
+    // Function to add tilt effect on images based on mouse position
+    document.querySelectorAll('.image-placeholder').forEach(image => {
+        image.addEventListener('mousemove', (e) => {
+            const rect = image.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            image.style.transform = `rotateX(${-y / 15}deg) rotateY(${x / 15}deg)`;
+        });
+
+        image.addEventListener('mouseleave', () => {
+            image.style.transform = 'rotateX(0deg) rotateY(0deg)';
+        });
+    });
+</script>
+
+<script>
+    // Select the splash screen element
+    const splashScreen = document.getElementById('splash-screen');
+
+    splashScreen.addEventListener('click', () => {
+        const rect = splashScreen.getBoundingClientRect();
+        const colors = ['#1e2b58', '#253569', '#353283', '#48459a', '#614cbf'];
+
+        // Create 1,100 particles with random dispersal directions and colors
+        for (let i = 0; i < 1100; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+
+            // Randomize particle position within splash screen
+            particle.style.left = `${Math.random() * rect.width}px`;
+            particle.style.top = `${Math.random() * rect.height}px`;
+
+            // Assign a random color from the palette
+            particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+
+            // Random dispersal direction for each particle
+            const angle = Math.random() * 2 * Math.PI;
+            const distance = Math.random() * 150 + 50;
+            particle.style.setProperty('--x', `${Math.cos(angle) * distance}px`);
+            particle.style.setProperty('--y', `${Math.sin(angle) * distance}px`);
+
+            splashScreen.appendChild(particle);
+
+            // Remove particle after animation completes
+            setTimeout(() => {
+                particle.remove();
+            }, 5000); // Match with CSS animation duration
+        }
+
+        // Fade out the splash screen text
+        document.querySelector('.splash-content').style.opacity = '0';
+
+        // Final fade-out of the entire splash screen after particles disperse
+        setTimeout(() => {
+            splashScreen.classList.add('fade-out');
+        }, 5000); // Match with CSS animation duration
+    });
+</script>
